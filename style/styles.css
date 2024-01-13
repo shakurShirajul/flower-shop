@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.text-description {
+    color: rgba(39, 39, 39, 0.60);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.btn-primary {
+    padding: 20px 43px;
+    border-radius: 8px;
+    background: #E55473;
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    border: none;
+}
+
+
+/* --- Banner Styles --- */
+header {
+    background: rgba(229, 84, 115, 0.10);
+}
+
+.banner {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-title {
+    color: #272727;
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.banner-description {
+    margin-bottom: 30px;
+}
+
+.banner>.content-container {
+    flex: 1;
+}
+
+.banner img {
+    width: 100%;
+}
+
+/* Feature Styles */
+.featured-flowers {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.feature-title {
+    margin-top: 180px;
+    margin-bottom: 24px;
+    color: #272727;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.feature-description {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.flower-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.flower-img-box {
+    border-radius: 300px 300px 0px 0px;
+    background: rgba(167, 33, 98, 0.15);
+    width: 400px;
+    height: 538px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.flower-name {
+    margin-top: 30px;
+    color: #272727;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+
+/* --- Delivery Styles --- */
+.delivery {
+    max-width: 1440px;
+    margin: 100px auto;
+    /* border: 1px solid green */
+}
+
+.delivery-content {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+    background: rgba(39, 39, 39, 0.05);
+
+    padding: 85px 175px;
+}
+
+/* --- Deal Discount Styles ---- */
+.hot-deal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    border-radius: 8px;
+    padding: 100px 0;
+    background: rgba(229, 84, 115, 0.05);
+}
+
+.deal-title {
+    color: #272727;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.deal-description {
+    color: rgba(39, 39, 39, 0.60);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.deal-text {
+    max-width: 600px;
+}
+
+.hot-deal button {
+    text-align: center;
+}
+
+.deal-img img {
+    /* width: 100%; */
+}
+
+/* Instagram Styles */
+.instagram {
+    max-width: 1440px;
+    margin: 130px auto;
+}
+
+.instagram-title {
+    color: #272727;
+    text-align: center;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 24px
+}
+
+.instagram-description {
+    color: rgba(39, 39, 39, 0.60);
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 50px;
+    /* 166.667% */
+}
+
+.instagram-img {
+    display: flex;
+    justify-content: space-between
+}
+
+/* --- Subscribe Box --- */
+.subscribe-box {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: url('../images/Rectangle\ 9.png');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    gap:40px
+}
+
+.subscribe-title {
+    color: #272727;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.subscribe-description {
+    color: rgba(39, 39, 39, 0.60);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    /* outline: none; */
+    /* 166.667% */
+}
+input[type="email"]{
+    padding: 22px 513px 22px 22px;
+    font-size: 16px;
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .banner,
+    .hot-deal {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flower-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .delivery-content {
+        flex-direction: column;
+        padding: 20px 0px;
+    }
+}
